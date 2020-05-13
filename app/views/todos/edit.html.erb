@@ -13,8 +13,13 @@
     </p>
     
     <p>
+    <%= form.label :duedate %><br>
+    <%= datetime_local_field(:todo, :duedate) %>
+    </p>
+    
+    <p>
     <%= form.submit %>
     </p>
     
-<% end %>
+    <% end %>
     

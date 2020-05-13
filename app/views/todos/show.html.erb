@@ -1,9 +1,14 @@
 <p>
-  <strong>Title:</strong>
-  <%= @todo.title %>
+<strong>Title:</strong>
+<%= @todo.title %>
 </p>
- 
+
 <p>
-  <strong>Description:</strong>
-  <%= @todo.description %>
+<strong>Description:</strong>
+<%= @todo.description %>
+</p>
+
+<p>
+<%= form.label :duedate %><br>
+<%= datetime_local_field(:todo, :duedate) %>
 </p>
