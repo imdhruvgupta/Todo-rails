@@ -1,0 +1,20 @@
+<h1>Listing Todos</h1>
+ 
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th></th>
+  </tr>
+ 
+  <% @todos.each do |todo| %>
+    <tr>
+      <td><%= todo.title %></td>
+      <td><%= todo.description %></td>
+      <td><%= link_to 'Edit', edit_todo_path(todo) %></td>
+      <td><%= link_to 'Delete', todo_path(todo), method: :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<a href='/todos/new'>Add new</a>
