@@ -5,7 +5,7 @@
     <th>Title</th>
     <th>Description</th>
     <th>Due Date</th>
-    <th></th>
+    <th>Priority</th>
   </tr>
  
   <% @todos.each do |todo| %>
@@ -13,6 +13,7 @@
       <td><%= todo.title %></td>
       <td><%= todo.description %></td>
       <td><%= todo.duedate %></td>
+      <td><%= todo.priority %></td>
       <td><%= link_to 'Edit', edit_todo_path(todo) %></td>
       <td><%= link_to 'Delete', todo_path(todo), method: :delete %></td>
     </tr>

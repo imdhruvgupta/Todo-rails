@@ -16,6 +16,11 @@
   <%= form.label :duedate %><br>
   <%= datetime_local_field(:todo, :duedate) %>
   </p>
+
+  <p>
+  <%= form.label :priority %><br>
+  <%= form.select :priority, Todo.priorities.keys%>
+  </p>
   
   <p>
   <%= form.submit %>

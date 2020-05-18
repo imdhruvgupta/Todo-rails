@@ -18,8 +18,13 @@
     </p>
     
     <p>
+    <%= form.label :priority %><br>
+    <%= form.select :priority, Todo.priorities.keys%>
+    </p>
+    
+    <p>
     <%= form.submit %>
     </p>
     
-    <% end %>
+<% end %>
     
